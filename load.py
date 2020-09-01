@@ -13,7 +13,8 @@ def init():
     model.load_weights("Model/model.h5")
     model.compile(optimizer="adam", loss="categorical_crossentropy", metrics=["accuracy"])
     print(model.summary())
-    graph = tf.get_default_graph()
+    graph = tf.compat.v1.get_default_graph
+
     return model,graph
 
 init()
