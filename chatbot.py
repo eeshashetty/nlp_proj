@@ -81,6 +81,8 @@ def get_prediction(query):
     score = round(max(prediction) * 100, 2)
     return action_index_1[ans], score
 
+print("\nChatbot: {}".format(messages['greet']))
+
 while True:
     query = input("\nYou: ")
     action, score = get_prediction(query)
