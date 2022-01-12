@@ -1,5 +1,6 @@
+import tensorflow
 from load import *
-from keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.preprocessing.sequence import pad_sequences
 import numpy as np
 import pandas as pd
 import nltk

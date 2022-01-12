@@ -1,7 +1,7 @@
-import keras.models  
-import tensorflow as tf   
-from keras.models import model_from_json
-from keras import backend as K
+import tensorflow as tf
+import tensorflow.keras.models
+from tensorflow.keras.models import model_from_json
+from tensorflow.keras import backend as K
 
 K.clear_session()
 def init():
